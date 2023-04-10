@@ -1,0 +1,31 @@
+{
+  "detail": [
+    {
+      "name": "Priyanshi Tripathi",
+      "description": "lorem ipsum",
+      "status": "open",
+      "rate": "70",
+      "balance": "270",
+      "deposit": "11223223",
+      "id": 4
+    },
+    {
+      "name": "rohan",
+      "description": "asas",
+      "status": "Select Status",
+      "rate": "12",
+      "balance": "12",
+      "deposit": "2222",
+      "id": 5
+    },
+    {
+      "name": "Radha",
+      "description": "lorem ipsum",
+      "status": "open",
+      "rate": "70",
+      "balance": "270",
+      "deposit": "11223223",
+      "id": 6
+    }
+  ]
+}

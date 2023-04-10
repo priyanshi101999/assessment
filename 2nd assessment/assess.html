@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2nd Assessment</title>
+    <link rel="stylesheet" href="assess.css">
+</head>
+
+
+    <div class="main">
+
+        <body>
+            <div class="topBtn">
+                <button style="background-color: white; color: black; padding: 6px 12px 6px 12px; font-size: 12px; border-radius: 8px; margin-right:64px ;" >Status</button>
+                <button style="background-color: blue; color: white; padding: 6px 12px 6px 12px; font-size: 12px; border-radius: 8px; margin-right:40px ;" >+ Add Customer</button>
+            </div>
+            
+    <form id="myForm">
+
+        <div class="line1">
+            <div class="name">
+                <label for="name">NAME</label>
+                <br>
+                <input type="text" id="name" placeholder="Enter Name" required>
+                <div id="nameError" class="error">Please enter the valid Name</div>
+            </div>
+            <div class="description">
+                <label for="description">DESCRIPTION</label>
+                <br>
+                <input type="text" id="description" placeholder="Enter Description" required>
+                <div id="descriptionError" class="error">Please enter the valid description</div>
+
+            </div>
+            <div class="status">
+
+                <label for="status">STATUS</label>
+                <br>
+                <select name="status" id="status"  required>
+                    <option value="Select Status" Selected disabled>Select Status</option>
+                    <option value="open">open</option>
+                    <option value="error">Error</option>
+                    <option value="success">success</option>
+                    <option value="inactive">Inactive</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="line2">
+            <div class="rate">
+                <label for="rate">RATE</label>
+                <br>
+                <input type="text" id="rate" placeholder="Enter Rate" required>
+                <div id="rateError" class="error">Please enter the valid rate</div>
+            </div>
+
+            <div class="balance">
+                <label for="balance">BALANCE</label>
+                <br>
+                <input type="text" id="balance" placeholder="Enter Balance" required>
+                <div id="balanceError" class="error">Please enter the valid balance</div>
+            </div>
+            <div class="deposit">
+                <label for="deposit">DEPOSIT</label>
+                <br>
+                <input type="text" id="deposit" placeholder="Enter Deposit" required>
+                <div id="depositError" class="error">Please enter the valid deposit</div>
+
+            </div>
+        </div>
+
+    </form>
+
+    <div class="buttons">
+        <button type="button" id="removeError" onclick="resetForm() ; removeError()" style="background-color: #676768; color: white; padding: 6px 12px 6px 12px; font-size: 12px; border-radius: 8px;">Cancel</button>
+        <button type="button" onclick="updateDetail()" style="background-color: #676768; color: white; padding: 6px 12px 6px 12px; font-size: 12px; border-radius: 8px;" >Update</button>
+        <button type="button" onclick="addDetail()" style="background-color: blue; color: white; padding: 6px 12px 6px 12px; font-size: 12px; border-radius: 8px; margin-right:40px;">Save</button>
+    </div>
+
+    <table id="table" ></table>
+
+</div>
+
+    <script src="assess.js"></script>
+</body>
+
+
+
+</html>
